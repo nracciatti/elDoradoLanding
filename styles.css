@@ -3,3 +3,52 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --font-color: color: rgb(41, 40, 40);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--font-color)
+}
+
+header {
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border: 1.5px solid black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+body {
+    background: #1e130c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
