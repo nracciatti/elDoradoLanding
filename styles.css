@@ -47,6 +47,16 @@ nav ul li a{
     color: var(--font-color);
 }
 
+li a:hover {
+    /* color: #8a4e29; */
+    font-weight: bold;
+    color: white;
+    background-color: #1e130c;
+    border-radius: 5px 2.5px;
+    padding: 1rem;
+    transition-duration: 0.5s;
+}
+
 body {
     background: #1e130c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
