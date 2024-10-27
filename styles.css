@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -10,27 +11,31 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: var(--font-color)
+    color: var(--font-color);
+    background: #1e130c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+/* header */
+
 header {
-    padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 20px;
     background-color: #fff;
     border: 1.5px solid black;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-.logo {
-    max-width: 100px;
-    height: auto;
+.logo img {
+    width: 80px;   
 }
 
 nav ul {
@@ -57,8 +62,57 @@ li a:hover {
     transition-duration: 0.5s;
 }
 
-body {
-    background: #1e130c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* main */
+
+/* Hero */
+
+/* .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/WhatsApp\ Image\ 2024-10-24\ at\ 21.12.54.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    filter: opacity();
+    width: 100%;
+    height: 500px;
 }
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.hero-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Primera seccion  */
+
+
+/* .opinion-container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.opinion{}
+
+.opinion-title{}
+
+.opinion-txt{} */ 
+
+
+
+
+
+
+
+
+
+
+
+
