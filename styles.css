@@ -105,13 +105,14 @@ li a:hover {
 .hero-container h1 {
   font-size: 3em;
   margin-bottom: 20px;
-  text-shadow: 3px 3px 10px black;
+  text-shadow: 3px 3px 2px black;
+  /* text-shadow: 3px 3px 10px black; */
   color: var(--color-gold);
 }
 
 .hero-container p {
   font-size: 2em;
-  color: var(--color-brown-medium);
+  color: var(--color-cream);
   font-weight: bold;
 }
 
@@ -282,6 +283,8 @@ li a:hover {
 
 .reserva-info h2 {
   font-size: 3rem;
+  text-shadow: 3px 3px 2px black;
+
 }
 
 .reserva-info p {
