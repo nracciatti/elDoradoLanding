@@ -40,33 +40,52 @@ header {
   background-color: #fff;
 }
 
-.nav-bar {
+/* NAV */
+
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
   max-width: 1200px;
-  /* position: sticky;
-    top: 0;
-    z-index: 1; */
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
 }
 
 .logo img {
   width: 80px;
 }
 
-nav ul {
-  list-style: none;
+.menu {
   display: flex;
+  list-style-type: none;
 }
 
-nav li {
-  margin: 0 1rem;
+.menu li {
+  margin-left: 20px;
 }
 
-nav ul li a {
+.menu a {
   text-decoration: none;
-  color: var(--color-brown-medium);
+  color: var(--color-beige);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 li a:hover {
@@ -89,7 +108,7 @@ li a:hover {
   background-image: url(./img/WhatsApp\ Image\ 2024-10-24\ at\ 21.12.54.jpeg);
   background-position: center;
   background-size: cover;
-    opacity: 10px;
+  opacity: 10px;
   width: 100%;
   height: 500px;
   border: 2px solid black;
@@ -284,7 +303,6 @@ li a:hover {
 .reserva-info h2 {
   font-size: 3rem;
   text-shadow: 3px 3px 2px black;
-
 }
 
 .reserva-info p {
@@ -386,5 +404,125 @@ footer span {
   }
   100% {
     margin-left: -300%;
+  }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+  .como-llegar,
+  .opinion-container,
+  .reserva-info {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-brown-dark);
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  
+  /* Hero */
+  .hero-container h1 {
+    font-size: 2em;
+  }
+  
+  .hero-container p {
+    font-size: 1.5em;
+  }
+  
+  /* Como llegar */
+  .como-llegar {
+    flex-direction: column;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+  
+  /* Opiniones */
+.opinion-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.opinion {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.opinion-h2 {
+  font-size: 2rem;
+}
+
+/* Reserva */
+.reserva-info {
+  padding: 40px 20px;
+}
+
+.reserva-info h2 {
+  font-size: 2rem;
+}
+
+.contacto p {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  /* Hero */
+  .hero-container h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-container p {
+    font-size: 1.2em;
+  }
+
+  .contact-btn {
+    font-size: 1.2rem;
+  }
+
+  /* Opiniones */
+  .opinion-h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Reserva */
+  .reserva-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .contacto p {
+    font-size: 1.5rem;
   }
 }
