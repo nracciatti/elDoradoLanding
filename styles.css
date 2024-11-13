@@ -37,7 +37,7 @@ h2 {
 
 header {
   font-size: 20px;
-  background-color: #fff;
+  background-color: var(--color-cream);
 }
 
 /* NAV */
@@ -57,7 +57,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
 }
 
 .logo img {
@@ -76,7 +76,7 @@ nav {
 
 .menu a {
   text-decoration: none;
-  color: var(--color-beige);
+  color: var(--color-brown-dark);
 }
 
 .menu-icon {
@@ -430,7 +430,13 @@ footer span {
     top: 10%;
     left: 0;
     right: 0;
-    background-color: var(--color-brown-dark);
+    background-color: var(--color-brown-light);
+    border: 1px solid black;
+  }
+
+  .menu-icon{
+    color: var(--color-brown-dark);
+    margin-bottom: 12px;
   }
 
   .menu li {
@@ -493,6 +499,11 @@ footer span {
 
 @media screen and (max-width: 480px) {
   /* Hero */ 
+  .hero{
+    background-position: right;
+  }
+
+
   .hero-container h1 {
     font-size: 1.5em;
   }
