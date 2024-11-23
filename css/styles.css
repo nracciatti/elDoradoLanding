@@ -128,16 +128,16 @@ li a:hover {
   text-shadow: 3px 3px 2px black;
   /* text-shadow: 3px 3px 10px black; */
   color: var(--color-gold);
-  opacity: 0;
-  animation: fade 1s forwards;
+  /* opacity: 0;
+  animation: fade 1s forwards;  */
 }
 
 .hero-container p {
   font-size: 2em;
   color: var(--color-cream);
   font-weight: bold;
-  opacity: 0;
-  animation: fade 1s forwards, slide-right 1s;
+  /* opacity: 0;
+  animation: fade 1s forwards, slide-right 1s; */
 }
 
 .hero-container p span {
@@ -436,6 +436,7 @@ footer span {
   .contacto {
     padding: 20px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
