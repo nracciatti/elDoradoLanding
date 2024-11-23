@@ -106,7 +106,7 @@ li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(./img/WhatsApp\ Image\ 2024-10-24\ at\ 21.12.54.jpeg);
+  background-image: url(../img/WhatsApp\ Image\ 2024-10-24\ at\ 21.12.54.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,12 +128,16 @@ li a:hover {
   text-shadow: 3px 3px 2px black;
   /* text-shadow: 3px 3px 10px black; */
   color: var(--color-gold);
+  opacity: 0;
+  animation: fade 1s forwards;
 }
 
 .hero-container p {
   font-size: 2em;
   color: var(--color-cream);
   font-weight: bold;
+  opacity: 0;
+  animation: fade 1s forwards, slide-right 1s;
 }
 
 .hero-container p span {
@@ -157,6 +161,8 @@ li a:hover {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fade 1s forwards, slide-right 1s;
 }
 
 .contact-btn:hover {
@@ -180,8 +186,6 @@ li a:hover {
   margin: 0 auto;
   margin-top: 50px;
   padding: 50px;
-  /* border: 2px solid black; */
-  /* border-radius: 50px 12px 50px; */
 }
 
 .info {
@@ -198,11 +202,21 @@ li a:hover {
   /* color: white; */
   font-weight: bold;
   color: var(--color-beige);
+  opacity: 0;
+  animation: fade 1s forwards, slide-up 1s;
 }
 
 .info p {
   font-size: 17px;
   color: var(--color-cream);
+  opacity: 0;
+  animation: fade 1s forwards, slide-up 1s;
+  animation-delay: 0.5s;
+}
+
+.map {
+  opacity: 0;
+  animation: fade 2s forwards, slide-right 1.5s;
 }
 
 /* slider */
@@ -292,7 +306,7 @@ li a:hover {
   flex-direction: column;
 }
 
-.contacto h2{
+.contacto h2 {
   margin-bottom: 20px;
 }
 
@@ -307,7 +321,7 @@ form {
 
 form input {
   border-radius: 7px;
-    padding: 5px;
+  padding: 5px;
 }
 
 form textarea {
@@ -315,7 +329,7 @@ form textarea {
   padding: 20px;
 }
 
-form button{
+form button {
   background-color: var(--color-brown-medium);
   color: var(--color-cream);
   border: 2px solid var(--color-gold);
@@ -330,7 +344,13 @@ form button{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
+form button:hover {
+  background-color: var(--color-gold);
+  color: var(--color-brown-dark);
+  border-color: var(--color-brown-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 /* boton whats app */
 
@@ -434,7 +454,7 @@ footer span {
     border: 1px solid black;
   }
 
-  .menu-icon{
+  .menu-icon {
     color: var(--color-brown-dark);
     margin-bottom: 12px;
   }
@@ -474,35 +494,33 @@ footer span {
     width: 100%;
     height: 300px;
   }
-  
+
   /* Opiniones */
   .opinion-container {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .opinion {
     width: 90%;
     margin-bottom: 20px;
   }
-  
+
   .opinion-h2 {
     font-size: 2rem;
   }
-  
+
   /* Reserva */
   .contacto {
     padding: 40px 20px;
   }
 }
 
-
 @media screen and (max-width: 480px) {
-  /* Hero */ 
-  .hero{
+  /* Hero */
+  .hero {
     background-position: right;
   }
-
 
   .hero-container h1 {
     font-size: 1.5em;
@@ -520,5 +538,33 @@ footer span {
   .opinion-h2 {
     font-size: 1.5rem;
   }
+}
 
+/* keyframes*/
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    translate: 0 100px;
+  }
+  to {
+    translate: 0;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    translate: 100px 0;
+  }
+  to {
+    translate: 0;
+  }
 }
